@@ -1,4 +1,5 @@
-int n;
+float n;
+float nombre;
 
 void setup(){
     Serial.begin(9600);
@@ -7,7 +8,9 @@ void setup(){
 void loop(){
     if (Serial.available()){
         n = Serial.parseInt ();
-        n = sq(n);
-        Serial.println(n);
+        nombre = sq(n);
+        Serial.print(n);
+        Serial.print(" au carré = ");
+        Serial.println(nombre);
     }
 }
