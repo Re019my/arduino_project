@@ -8,6 +8,7 @@ void setup()
 void loop()
 {
     for (i=0 ; i<10 ; i++){
+       Serial.print("---------------------------");
         for (n=0 ; n<10 ; n++){
     Serial.print(i);
     Serial.print("*");
