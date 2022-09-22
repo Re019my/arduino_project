@@ -7,11 +7,13 @@ void setup()
 
 void loop()
 {
-    for (i=0 ; i<=10 ; i++);
-        for (n=0 ; n<=10 ; n++);
+    for (i=0 ; i<10 ; i++){
+        for (n=0 ; n<10 ; n++){
     Serial.print(i);
     Serial.print("*");
     Serial.print(n);
     Serial.print("=");
     Serial.println(i*n);
+        }
+    }
 }
